@@ -7,6 +7,4 @@
 .body {
   display: flex;
   flex-direction: column;
-  /* background-image: var(--background-image-5);
-  background-size: cover; */
 }

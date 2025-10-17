@@ -1,0 +1,62 @@
+<svg
+  width="1em"
+  height="1em"
+  viewBox="0 0 200 200"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Define mask to cut out fork lines from the arrow -->
+  <defs>
+    <mask id="fork-mask">
+      <!-- White background - shows the arrow -->
+      <rect width="200" height="200" fill="white" />
+      <!-- Black lines - cuts out parts from the arrow to create fork effect -->
+      <line
+        x1="190"
+        y1="100"
+        x2="130"
+        y2="125"
+        stroke="black"
+        stroke-width="8"
+        stroke-linecap="round"
+      />
+      <line
+        x1="190"
+        y1="100"
+        x2="130"
+        y2="100"
+        stroke="black"
+        stroke-width="8"
+        stroke-linecap="round"
+      />
+      <line
+        x1="190"
+        y1="100"
+        x2="130"
+        y2="75"
+        stroke="black"
+        stroke-width="8"
+        stroke-linecap="round"
+      />
+      <path
+        d="M 65 90 L 65 110 L 110 106 L 110 95 Z"
+        fill="black"
+        stroke="black"
+        stroke-linejoin="round"
+        stroke-linecap="round"
+        stroke-width="1"
+      />
+    </mask>
+  </defs>
+
+  <!-- Main filled arrow pointing right with mask applied - shortened handle with rounded corners -->
+  <path
+    d="M 60 85 L 60 115 L 120 110 L 120 140 L 180 100 L 120 60 L 120 90 Z"
+    fill="currentColor"
+    mask="url(#fork-mask)"
+    stroke="currentColor"
+    stroke-width="10"
+    stroke-linejoin="round"
+    stroke-linecap="round"
+  />
+</svg>
