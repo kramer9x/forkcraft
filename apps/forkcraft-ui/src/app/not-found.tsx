@@ -2,6 +2,7 @@ import { Glasspanel } from "@/components/Glasspanel";
 import { Header } from "./components/Header";
 import styles from "./not-found.module.css";
 import Image from "next/image";
+import ForkOutline from "@/assets/forkarrow-circle.svg?react";
 
 export default function NotFound() {
   return (
@@ -11,15 +12,7 @@ export default function NotFound() {
         <div className={styles.disclaimers}>
           <Glasspanel theme="dark" className={styles.disclaimer}>
             <div className={styles.title404}>
-              4
-              <Image
-                src="/forkarrow-circle.svg"
-                alt="Fork"
-                width={40}
-                height={40}
-                className={styles.forkIcon}
-              />
-              4
+              4<ForkOutline className={styles.forkIcon} />4
             </div>
             Resource not found
           </Glasspanel>

@@ -53,6 +53,5 @@
 
 .forkIcon {
   transform: rotate(-90deg);
-  /* Use CSS filter to make SVG inherit color */
-  filter: brightness(0) saturate(100%) invert(100%);
+  font-size: 36px;
 }
