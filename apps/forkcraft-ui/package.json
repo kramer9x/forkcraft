@@ -7,7 +7,7 @@
     "build": "next build",
     "dev": "next dev",
     "test": "jest --passWithNoTests",
-    "serve": "npx serve out",
+    "serve": "npx serve -s out",
     "lint": "next lint"
   },
   "dependencies": {
