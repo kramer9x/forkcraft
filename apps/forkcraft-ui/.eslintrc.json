@@ -1,0 +1,17 @@
+{
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "ignorePatterns": [
+    "node_modules/**",
+    ".next/**",
+    "out/**",
+    "dist/**",
+    "build/**",
+    "next-env.d.ts"
+  ],
+  "rules": {
+    // Disable conflicting rules that are handled by Next.js config
+    "@typescript-eslint/no-unused-expressions": "off",
+    // Disable display name requirement for React components
+    "react/display-name": "off"
+  }
+}

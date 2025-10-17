@@ -1,0 +1,12 @@
+/* Antialiased text rendering */
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  /* background-image: var(--background-image-5);
+  background-size: cover; */
+}

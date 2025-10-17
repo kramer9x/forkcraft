@@ -1,0 +1,57 @@
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --background-image-1: url("/background-1.jpg");
+  --background-image-2: url("/background-2.jpg");
+  --background-image-3: url("/background-3.jpg");
+  --background-image-4: url("/background-4.jpg");
+  --background-image-5: url("/background-5.jpg");
+}
+
+/* Disable scroll bouncing globally */
+html {
+  overscroll-behavior: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --background-image-1: url("/background-1.jpg");
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* background: var(--background) fixed; */
+  color: var(--foreground);
+  font-family: var(--font-nunito), Arial, Helvetica, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  /* Disable scroll bouncing on edges */
+  overscroll-behavior: none;
+  -webkit-overflow-scrolling: touch;
+  min-width: 370px;
+}
+
+.background-1 {
+  position: relative;
+}
+
+.background-1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: var(--background-image-5);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 1; /* Only affects the background */
+  z-index: -1; /* Places it behind the content */
+}

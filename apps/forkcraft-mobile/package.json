@@ -1,0 +1,16 @@
+{
+  "name": "@forkcast/mobile",
+  "version": "1.0.0",
+  "description": "Forkcast mobile application",
+  "private": true,
+  "scripts": {
+    "build": "echo 'Mobile build not implemented yet'",
+    "dev": "echo 'Mobile dev not implemented yet'",
+    "test": "echo 'Mobile tests not implemented yet'",
+    "lint": "echo 'Mobile lint not implemented yet'"
+  },
+  "dependencies": {
+    "@forkcast/shared-utils": "file:../../libs/shared/utils"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,54 @@
+{
+  "name": "forkcraft",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "build": "nx run-many --target=build --all",
+    "dev": "nx run-many --target=dev --all",
+    "test": "nx run-many --target=test --all",
+    "lint": "nx run-many --target=lint --all",
+    "serve": "nx run @forkcraft/ui:serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kramer9x/forkcraft.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kramer9x/forkcraft/issues"
+  },
+  "homepage": "https://github.com/kramer9x/forkcraft#readme",
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ],
+  "dependencies": {
+    "next": "15.5.4",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@nx/eslint": "^21.6.4",
+    "@nx/eslint-plugin": "^21.6.4",
+    "@nx/jest": "^21.6.4",
+    "@nx/js": "^21.6.4",
+    "@nx/next": "^21.6.4",
+    "@svgr/webpack": "^8.1.0",
+    "@types/jest": "^29.0.0",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@typescript-eslint/eslint-plugin": "^8.46.1",
+    "@typescript-eslint/parser": "^8.46.1",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.4",
+    "jest": "^29.0.0",
+    "nx": "^21.6.4",
+    "ts-jest": "^29.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5"
+  }
+}

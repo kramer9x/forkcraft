@@ -1,0 +1,44 @@
+.button {
+  background: transparent;
+  color: #1a1a1a;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-nunito);
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.primary {
+  background-color: #ffffff;
+  box-shadow: 0 0 3px 0 rgb(0 0 0 / 30%);
+}
+
+.primary:hover {
+  background-color: #f9f9f9;
+  box-shadow: 0 0 3px 0 rgb(0 0 0 / 30%);
+}
+
+.primary:active {
+  background-color: #f0f0f0;
+  box-shadow: 0 0 3px 0 rgb(0 0 0 / 30%);
+}
+
+.link {
+  color: #3d3d3d;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.link:hover {
+  color: #282828;
+}
+
+.link:active {
+  color: #1a1a1a;
+}

@@ -1,0 +1,30 @@
+.authContainer {
+  /* width: 80%; */
+  margin: 20px;
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  min-width: 200px;
+  max-width: 300px;
+}
+
+@media (max-width: 500px) {
+  .authContainer {
+    padding: 10px 30px;
+    gap: 20px;
+  }
+}
+
+.delimiter {
+  height: 1px;
+  /* background-color: #8f8f8f; */
+  width: 100%;
+  margin: 10px 0;
+}
+
+.errorMessage {
+  padding: 10px;
+  color: #ac0000;
+}

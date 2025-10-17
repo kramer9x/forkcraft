@@ -1,0 +1,16 @@
+{
+  "projects": {
+    "@forkcraft/ui": "apps/forkcraft-ui",
+    "@forkcraft/mobile": "apps/forkcraft-mobile",
+    "@forkcraft/shared-utils": "libs/shared/utils",
+    "forkcraft": null
+  },
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build"]
+    },
+    "test": {
+      "dependsOn": ["^build"]
+    }
+  }
+}
